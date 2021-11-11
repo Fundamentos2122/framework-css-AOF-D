@@ -1,0 +1,325 @@
+/*Clases referentes a Botones*/
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 0.25em 0.75em;
+    font-size: 1em;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25em;
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;/*Buscar más tarde esta función, tiene muchas aplicaciones y atributos*/
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--color-primary-darked);
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: var(--color-secondary);
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: var(--color-secondary-darked);
+}
+
+.btn-success {
+    color: #fff;
+    background-color: var(--color-success);
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: var(--color-success-darked);
+}
+
+.btn-info {
+    color: #fff;
+    background-color: var(--color-info);
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: var(--color-info-darked);
+}
+
+.btn-warning {
+    color: #222;
+    background-color: var(--color-warning);
+}
+
+.btn-warning:hover {
+    color: #fff;
+    background-color: var(--color-warning-darked);
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: var(--color-danger);
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: var(--color-danger-darked);
+}
+
+.btn-light {
+    color: #222;
+    background-color: var(--color-light);
+}
+
+.btn-light:hover {
+    color: #222;
+    background-color: var(--color-light-darked);
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: var(--color-dark);
+}
+
+.btn-dark:hover {
+    color: #fff;
+    background-color: var(--color-dark-darked);
+}
+
+/*Clases referentes a tablas Tablas*/
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.table th,
+.table td {
+    padding: 0.5em;
+    border-top: 1px solid var(--border-color);
+}
+
+.table-primary {
+    color: #fff;
+    background-color: var(--color-primary-clear);
+}
+
+.table-primary th {
+    background-color: var(--color-primary);
+}
+
+.table-secondary {
+    background-color: var(--color-secondary-clear);
+}
+
+.table-success {
+    background-color: var(--color-success-clear);
+}
+
+.table-info {
+    background-color: var(--color-info-clear);
+}
+
+.table-warning {
+    background-color: var(--color-warning-clear);
+}
+
+.table-danger {
+    background-color: var(--color-danger-clear);
+}
+
+.table-light {
+    background-color: var(--color-light);
+}
+
+.table-dark {
+    color: #fff;
+    background-color: var(--color-dark);
+}
+
+.table-dark th {
+    color: #fff;
+    background-color: var(--color-dark-darked);
+}
+
+.close {
+    background-color: transparent;
+    border: none;
+    color: var(--border-color);
+    transition: border 0.15s ease-in-out;
+}
+
+.close:hover {
+    cursor: pointer;
+    border: 1px solid var(--border-color);;
+    border-radius: 10%;
+}
+
+/*Clases para el funcionamiento de modal*/
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+    background-color: rgba(58, 58, 58, 0.411);
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: none;
+}
+
+/*Webkit para compatibilidad con más navegadores*/
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-content {
+    max-width: 500px;
+    position: relative;
+    margin: 1em auto;
+    background-color: white;
+    border-radius: 0.25em;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header, .modal-footer {
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--border-color);
+}
+
+.modal-header {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-width: 1px;
+}
+
+.modal-title {
+    margin-bottom: 0;
+}
+
+.modal-body {
+    padding: 1em;
+}
+
+.modal-footer {
+    padding: 1em;
+    display: flex;
+    justify-content: flex-end;
+    border-top-width: 1px;
+}
+
+.modal-footer > * {
+    margin: 0.25em;
+}
+
+/*Clases para el NavBar*/
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-light);
+    padding: 1em;
+}
+
+.navbar-brand {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.navbar-toggle {
+    padding: 0.5em;
+    height: fit-content;
+}
+
+.navbar-collapse {
+    display: none;
+    flex-basis: 100%;
+}
+
+.navbar-nav {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5em 0.75em;
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+.nav-link:hover {
+    background-color: var(--color-light-darked);
+    /* color: var(--color-light); */
+}
+
+.dropdown-menu {
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.dropdown-menu .dropdown-item {
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--color-light);
+}
+
+.show {
+    display: block;
+}
+
+/*No se muestra el boton de menú para móviles*/
+@media (min-width: 768px) {
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: block;
+        flex-basis: auto;
+    }
+
+    .navbar-nav {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+    }
+}

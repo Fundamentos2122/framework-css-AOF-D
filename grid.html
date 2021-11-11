@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/framework.css">
+    <title>Grid Framework</title>
+</head>
+<body class="container-fluid container-lg">
+     <h1>Hola Mundo</h1>
+
+    <!-- Doce columnas, ocupan todo el espacio horizontal. -->
+    <div class="row">
+        <div class="col-1">Col</div>
+        <div class="col-1">Col</div>
+        <div class="col-1">Col</div>
+        <div class="col-1">Col</div>
+        <div class="col-1">Col</div>
+        <div class="col-1">Col</div>
+        <div class="col-1">Col</div>
+        <div class="col-1">Col</div>
+        <div class="col-1">Col</div>
+        <div class="col-1">Col</div>
+        <div class="col-1">Col</div>
+        <div class="col-1">Col</div>
+    </div>
+
+    <!-- Seis columnas con doble espacio. -->
+    <div class="row">
+        <div class="col-2">Col</div>
+        <div class="col-2">Col</div>
+        <div class="col-2">Col</div>
+        <div class="col-2">Col</div>
+        <div class="col-2">Col</div>
+        <div class="col-2">Col</div>
+    </div>
+
+    <!-- Cuatro columnas con triple espacio.-->
+    <div class="row">
+        <div class="col-3">Col</div>
+        <div class="col-3">Col</div>
+        <div class="col-3">Col</div>
+        <div class="col-3">Col</div>
+    </div>
+
+    <!-- Aunque no se llene el espacio, se mantienen bien. -->
+    <div class="row">
+        <div class="col-1">Col</div>
+        <div class="col-2">Col</div>
+        <div class="col-3">Col</div>
+        <div class="col-2">Col</div>
+        <div class="col-3">Col</div>
+    </div>
+
+    <!-- Las columnas se salen de los 12 espacios, pero se mantienen dentro de los márgenes por el flex-wrap. -->
+    <div class="row">
+        <div class="col-4">Col</div>
+        <div class="col-2">Col</div>
+        <div class="col-7">Col</div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta natus magni odio distinctio doloremque aut, repellendus error dolore autem quas. Voluptatem ratione maxime optio numquam aperiam ipsa fugiat delectus sint?</p>
+
+    <!-- La columna en col-auto se adapto al tamaño de nuestro lorem, que son las 12 unidades. -->
+    <div class="row">
+        <div class="col-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita aliquam libero laborum magni. Quas nostrum voluptate mollitia esse pariatur adipisci maxime, illum molestias dolores eaque, ea doloribus numquam at accusantium?</div>
+        <div class="col-1">Col</div>    
+        <div class="col-1">Col</div>
+    </div>
+
+    <!--Si dejamos la clase col, se extienede a lo que sobra de espacio. -->
+    <div class="row">
+        <div class="col-7 border">Hola mundo</div>
+        <div class="col-5 border">Hola</div>
+        <div class="col border">Otra columna</div>
+        <div class="col-1">Hola</div>
+    </div>
+
+    <!-- Separa en medidas iguales si no se usa tamaño. -->
+    <div class="row">
+        <div class="col border">Hola mundo</div>
+        <div class="col border">Otra columna</div>
+    </div> 
+</body>
+</html>

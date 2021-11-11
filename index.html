@@ -1,13 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <link rel="stylesheet" href="css/framework.css">
+    <title>Index Framework</title>
+
+    <style>
+        /*Clase auxiliar para visualizar los bordes, se repetía mucho el código*/
+        .auxBorderStyle{
+            width: 150px;
+            height: 150px;
+            margin: 0.5em;
+            display: inline-block;
+        }
+        /*Ejemplo de border si no estuviera esta clase*/
+         /* <div class="border border-primary" style="width: 150px; height: 150px;margin: 0.5em; display: inline-block;"></div> */
+    </style>
+
 </head>
 <body>
+    <!-- Headers -->
+    <h1>Hola mundo</h1>
+    <div class="h1">Hola <br> Mundo</div>
+
+    <!-- Tamaños de display -->
+    <div class="display-1">DISPLAY 1</div>
+    <div class="display-2">DISPLAY 2</div>
+    <div class="display-3">DISPLAY 3</div>
+    <div class="display-4">DISPLAY 4</div>
+
+    <!-- Text con colors definidos. -->
+    <p class="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente non, a earum ab tempore quasi aperiam quos eius, corrupti amet labore incidunt praesentium magnam recusandae tempora quod velit debitis deleniti.</p>
+
+    <p class="text-success">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorum adipisci id illum necessitatibus impedit ullam sequi commodi cupiditate itaque excepturi aperiam voluptatem, assumenda accusantium, corrupti dolores possimus in quasi?</p>
+
+    <!-- Colors -->
+    <div class="bg-primary text-light">bg-primary</div>
+    <div class="bg-secondary text-light">bg-secondary</div>
+    <div class="bg-success text-light">bg-success</div>
+    <div class="bg-info">bg-info</div>
+    <div class="bg-warning">bg-warning</div>
+    <div class="bg-danger">bg-danger</div>
+    <div class="bg-light">bg-light</div>
+    <div class="bg-dark text-light">bg-dark</div>
+
+    <br><br><br>
+
+    <!-- Borders completos -->
+    <div class="border border-primary auxBorderStyle" ></div>
+    <div class="border-top auxBorderStyle"></div>
+    <div class="border-right border-success auxBorderStyle"></div>
+    <div class="border-bottom auxBorderStyle"></div>
+    <div class="border-left border-warning auxBorderStyle"></div>
+
+    <!-- Borders sólo en unos lados-->
+    <div class="border-0 bg-secondary auxBorderStyle"></div>
+    <div class="border border-top-0 border-danger auxBorderStyle"></div>
+    <div class="border border-right-0 border-info auxBorderStyle"></div>
+    <div class="border border-bottom-0 auxBorderStyle"></div>
+    <div class="border border-left-0 auxBorderStyle"></div>
+
+    <br><br><br><br>
+
+    <!-- Botones por colores -->
     
+    <button class="btn btn-primary">Botón</button>
+    <button class="btn btn-secondary">Botón</button>
+    <button class="btn btn-info">Botón</button>
+    <button class="btn btn-warning">Botón</button>
+    <button class="btn btn-danger">Botón</button>
+    <button class="btn btn-dark">Botón</button>
+    <button class="btn btn-light">Botón</button>
+    <a href="" class="btn btn-success">Link</a>
+
+    <br><br><br>
+
+    <!-- Tabla -->
+    <!-- Distintos estilos para cada renglón, jalan distintos estilos -->
+    <table class="table table-primary">
+        <tr>
+            <th>Clave Única</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+        </tr>
+        <tr>
+            <td class="table-secondary">134816</td>
+            <td class="table-secondary">Nando</td>
+            <td class="table-secondary">Ortega</td>
+        </tr>
+        <tr>
+            <td class="table-info">999431</td>
+            <td class="table-info">Emanuel</td>
+            <td class="table-info">Vázquez</td>
+        </tr>
+    </table>
 </body>
 </html>
